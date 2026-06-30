@@ -1,8 +1,8 @@
 interface:
   display_name: "stock-hiclaw skill"
-  short_description: "Stock Hiclaw 中英双语策略公开说明"
+  short_description: "Stock Hiclaw 多语言策略公开说明"
   brand_color: "#1A237E"
-  default_prompt: "Use $stock-hiclaw-skill to explain the Strict Super Potential and Swing Selected strategy logic, multilingual public copy, author/contact boundaries, and risk disclaimer."
+  default_prompt: "Use $stock-hiclaw-skill to explain the language-tagged public Stock Hiclaw strategy brief, Strict Super Potential and Swing Selected logic, author/contact copy with WeChat chenxinyi_g, QR-code references, and risk disclaimer."
 
 policy:
   allow_implicit_invocation: true

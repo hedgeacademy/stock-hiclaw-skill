@@ -1,6 +1,6 @@
 ---
 name: stock-hiclaw-skill
-description: Multilingual public strategy brief for Stock Hiclaw A-share box-breakout research. Use when explaining the four-strategy framework, especially Strict Super Potential and Swing Selected logic, screening boundaries, author/contact copy, and compliant public risk wording.
+description: Multilingual public strategy brief for Stock Hiclaw A-share box-breakout research. Use when explaining the four-strategy framework, language-tagged public copy, Strict Super Potential and Swing Selected logic, author/contact copy with WeChat chenxinyi_g, QR-code references, and compliant public risk wording.
 ---
 
 # stock-hiclaw skill
@@ -17,14 +17,25 @@ Use the language requested by the user:
 
 - If the user writes in Chinese, answer in Chinese.
 - If the user writes in English, answer in English.
-- If the output is for a public README, landing page, repository, or international audience, provide Chinese and English side by side.
+- If the output is for a public README, landing page, repository, or international audience, prefer separate language-tagged sections instead of mixing all languages in one paragraph.
 - Keep the original Chinese strategy names visible. On first mention, pair them with English labels:
   - 今日突破 / Today Breakout
   - 超级潜力 / Super Potential
   - 严选超级潜力股 / Strict Super Potential
   - 波段严选 / Swing Selected
+- Supported public language tags are:
+  - `en`: English
+  - `zh`: 中文
+  - `ar-sa`: العربية / Saudi readers
+  - `ko`: 한국어
+  - `ja`: 日本語
+  - `th`: ไทย
 
 Avoid machine-translation-heavy wording. Keep the English version concise, conservative, and research-oriented.
+
+For a GitHub README, use a top language navigation line:
+
+`**English** | [中文](#中文) | [العربية](#arabic) | [한국어](#korean) | [日本語](#japanese) | [ไทย](#thai)`
 
 ## Strategy Map
 
@@ -36,6 +47,15 @@ Stock Hiclaw has four strategy modules:
 4. **波段严选**: swing-oriented candidates that avoid overheated chase entries and favor controlled momentum near the box area.
 
 This public skill documents **严选超级潜力股** and **波段严选** in detail. The other two strategies should be described only at a high level unless the user provides additional source rules.
+
+## Public Strategy Tags
+
+Use these stable tags when structuring multilingual public copy:
+
+- `today-breakout`: 今日突破 / Today Breakout.
+- `super-potential`: 超级潜力 / Super Potential.
+- `strict-super-potential`: 严选超级潜力股 / Strict Super Potential.
+- `swing-selected`: 波段严选 / Swing Selected.
 
 ## Data Assumptions
 
@@ -165,11 +185,11 @@ Use a restrained author introduction:
 
 Chinese:
 
-"作者是 Stock Hiclaw 研究系统维护者，长期关注 A 股箱体突破筛选、每日复盘、策略可视化和研究流程优化。本公开版定位为研究说明和产品说明，不构成个人投资顾问服务。"
+"由陈歆怡（Xinyi Chen）创建。陈歆怡是在上海的浙江人，海聚海外（HEDGE Global）创始人兼 CEO，长期深耕高端国际教育、企业出海和科技投资，也是一名用 AI 搭建研究与产品流程的 vibe coding 爱好者。本公开版定位为研究说明和产品说明，不构成个人投资顾问服务。"
 
 English:
 
-"The author maintains the Stock Hiclaw research system and focuses on A-share box-breakout screening, daily review, strategy visualization, and research workflow optimization. This public version is a research and product brief, not a personal investment advisory service."
+"Created by Xinyi Chen (陈歆怡), a Zhejiang native based in Shanghai. She is the founder and CEO of HEDGE Global / 海聚海外, working across premium international education, global expansion, and technology investment. She is also a vibe coding enthusiast building research and product workflows with AI. This public version is a research and product brief, not a personal investment advisory service."
 
 Do not claim the author is a licensed investment advisor unless the user provides a verified license and asks to include it.
 
@@ -179,11 +199,19 @@ Do not describe historical strategy performance as guaranteed future accuracy.
 
 When public-facing copy needs a contact line, use:
 
-"Stock Hiclaw 目前包含今日突破、超级潜力、严选超级潜力股、波段严选四个策略。想沟通更多策略细节或合作方式，可以通过作者对外公开的微信渠道联系作者。"
+"Stock Hiclaw 目前包含今日突破、超级潜力、严选超级潜力股、波段严选四个策略。想沟通更多策略细节或合作方式，可以添加作者微信：`chenxinyi_g`。"
 
 For bilingual public copy, use:
 
-"For strategy discussion or collaboration, contact the author through the author's publicly shared WeChat channel. 想沟通更多策略细节或合作方式，可以通过作者对外公开的微信渠道联系作者。"
+"For strategy discussion or collaboration, connect on WeChat: `chenxinyi_g`. 想沟通更多策略细节或合作方式，可以添加作者微信：`chenxinyi_g`。"
+
+For README or GitHub pages, include the QR code image when assets are available:
+
+```html
+<p>
+  <img src="assets/wechat-xinyi-chen.jpg" alt="WeChat QR code for Xinyi Chen" width="260">
+</p>
+```
 
 For privacy and public-repository safety, do not publish:
 
@@ -191,6 +219,17 @@ For privacy and public-repository safety, do not publish:
 - SMS verification codes,
 - customer phone numbers,
 - customer orders or commission data,
-- unconfirmed private WeChat IDs.
+- private WeChat IDs that the user has not explicitly approved for public release.
 
-Do not invent a WeChat ID. If the user provides a specific WeChat ID later, insert it exactly as provided.
+The user has explicitly approved the public WeChat ID `chenxinyi_g` for this stock-hiclaw public skill.
+
+## Language Files
+
+The public repository may include independent language files:
+
+- `assets/i18n/stock-hiclaw.en.md`
+- `assets/i18n/stock-hiclaw.zh.md`
+- `assets/i18n/stock-hiclaw.ar-sa.md`
+- `assets/i18n/stock-hiclaw.ko.md`
+- `assets/i18n/stock-hiclaw.ja.md`
+- `assets/i18n/stock-hiclaw.th.md`
