@@ -1,0 +1,8 @@
+interface:
+  display_name: "stock-hiclaw skill"
+  short_description: "Stock Hiclaw 双策略公开说明"
+  brand_color: "#1A237E"
+  default_prompt: "Use $stock-hiclaw-skill to explain the Strict Super Potential and Swing Selected strategy logic, boundaries, risk disclaimer, and public communication copy."
+
+policy:
+  allow_implicit_invocation: true
