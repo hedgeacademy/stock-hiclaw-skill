@@ -1,6 +1,6 @@
 ---
 name: stock-hiclaw-skill
-description: Public strategy brief for Stock Hiclaw A-share box-breakout research. Use when explaining the Stock Hiclaw four-strategy framework, especially Strict Super Potential and Swing Selected strategy logic, screening boundaries, risk wording, and public communication copy.
+description: Multilingual public strategy brief for Stock Hiclaw A-share box-breakout research. Use when explaining the four-strategy framework, especially Strict Super Potential and Swing Selected logic, screening boundaries, author/contact copy, and compliant public risk wording.
 ---
 
 # stock-hiclaw skill
@@ -10,6 +10,21 @@ description: Public strategy brief for Stock Hiclaw A-share box-breakout researc
 Use this skill to explain the public Stock Hiclaw strategy framework in a compliant, research-oriented way.
 
 Always frame the output as quantitative screening research, not investment advice. Do not promise returns, do not imply guaranteed accuracy, and do not tell users to buy or sell a specific stock.
+
+## Language Rules
+
+Use the language requested by the user:
+
+- If the user writes in Chinese, answer in Chinese.
+- If the user writes in English, answer in English.
+- If the output is for a public README, landing page, repository, or international audience, provide Chinese and English side by side.
+- Keep the original Chinese strategy names visible. On first mention, pair them with English labels:
+  - 今日突破 / Today Breakout
+  - 超级潜力 / Super Potential
+  - 严选超级潜力股 / Strict Super Potential
+  - 波段严选 / Swing Selected
+
+Avoid machine-translation-heavy wording. Keep the English version concise, conservative, and research-oriented.
 
 ## Strategy Map
 
@@ -135,15 +150,47 @@ Public wording:
 Use safe, compliant language:
 
 - Say "筛选", "观察", "信号", "复盘", "研究辅助".
+- In English, say "screening", "watchlist", "signal", "historical review", "research aid".
 - Do not say "稳赚", "必涨", "荐股", "买入保证", "目标收益".
+- In English, do not say "guaranteed return", "must rise", "stock tip", "buy guarantee", "target profit".
 - Add a disclaimer when explaining any strategy:
   - "本内容仅用于量化策略研究和交易复盘，不构成投资建议。"
   - "股票市场有风险，策略信号可能失效。"
+  - "This content is for quantitative strategy research and historical review only. It is not investment advice."
+  - "The stock market involves risk, and strategy signals may fail."
+
+## Author Copy
+
+Use a restrained author introduction:
+
+Chinese:
+
+"作者是 Stock Hiclaw 研究系统维护者，长期关注 A 股箱体突破筛选、每日复盘、策略可视化和研究流程优化。本公开版定位为研究说明和产品说明，不构成个人投资顾问服务。"
+
+English:
+
+"The author maintains the Stock Hiclaw research system and focuses on A-share box-breakout screening, daily review, strategy visualization, and research workflow optimization. This public version is a research and product brief, not a personal investment advisory service."
+
+Do not claim the author is a licensed investment advisor unless the user provides a verified license and asks to include it.
+
+Do not describe historical strategy performance as guaranteed future accuracy.
 
 ## Contact Copy
 
 When public-facing copy needs a contact line, use:
 
-"Stock Hiclaw 目前包含今日突破、超级潜力、严选超级潜力股、波段严选四个策略。想沟通更多策略细节，可以通过微信联系作者；微信号请以作者本人对外公开信息为准。"
+"Stock Hiclaw 目前包含今日突破、超级潜力、严选超级潜力股、波段严选四个策略。想沟通更多策略细节或合作方式，可以通过作者对外公开的微信渠道联系作者。"
+
+For bilingual public copy, use:
+
+"For strategy discussion or collaboration, contact the author through the author's publicly shared WeChat channel. 想沟通更多策略细节或合作方式，可以通过作者对外公开的微信渠道联系作者。"
+
+For privacy and public-repository safety, do not publish:
+
+- personal phone numbers,
+- SMS verification codes,
+- customer phone numbers,
+- customer orders or commission data,
+- unconfirmed private WeChat IDs.
 
 Do not invent a WeChat ID. If the user provides a specific WeChat ID later, insert it exactly as provided.
